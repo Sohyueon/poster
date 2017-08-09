@@ -1,0 +1,73 @@
+<style>
+    input[type='file'] {
+        border: 1px solid #d1d1d1;
+        padding: .5em;
+        border-radius: .3em;
+        width: 100%;
+    }
+    #container3 { width: 568px; height:781px; border:2px solid #ccc; background-image: url('europe.jpg'); background-color: LightSkyBlue; padding: 20px 20px 20px 20px;}
+    .selectable .ui-selected { background: #F39814; color: white; }
+    .tt {
+        background-color: LightSkyBlue;
+        width: 350px;
+        overflow: visible;
+        font-family: 'Lobster', cursive;
+        font-size: 9rem;
+        height: 250px; border:0;
+        text-align: center;
+        overflow-y:hidden;
+        background:clear;
+    }
+    
+    #big {background-color: LightBlue; font-size: 3rem; font-family: 'Architects Daughter', cursive; text-align: left; position: relative; left: -168px; top: -189px;}
+    #small {background-color: LightBlue; text-align: left; font-family: 'Domine', serif; cursive; position: relative; left: -173px; top: -190px;}
+    #ph_num {text-align:text-align: left; position: relative; left: -173px; top: -167.5px; }
+</style>
+  
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script>
+  $( function() {
+ 
+    $( ".draggable" ).draggable({ containment: "#container", scroll: false });
+    $( "#draggable1" ).draggable({ containment: "#container", scroll: false });
+    $( ".resizable" ).resizable();
+    $(".selectable").selectable();
+  })
+   
+  </script>
+<center id="ji">
+        <div id="container3" class="selectable">
+            <span class="draggable" width="auto" style="text-align:center;">
+                <textarea type="text" class="tt" id="title" onkeydown="resize(this)" onkeyup="resize(this)">CAR WASH</textarea>
+                <br>
+            </span> 
+            
+            <br>
+           
+            
+            <span class="draggable" id="big" width="auto">
+                OUR<br>
+                SERVICES<br><br>
+            </span>
+            <span class="draggable" id="small" width="auto">
+                
+                BASIC CLEAN - $15<br>
+                Interior Cleaning<br>
+                Basic Wash<br><br>
+                SUPER CLEAN - $20<br>
+                Interior Cleaning<br>
+                Scratch Removal,<br>
+                Carpet Cleaning<br><br>
+                DELUXE CLEAN - $30<br>
+                Interior Cleaning,<br>
+                Scratch Removal,<br>
+                Carpet Cleaning<br>
+                Paint Restoration<br>
+            </span>
+            <span class="draggable" id="ph_num" width="auto">
+               02)000-0000
+            </span>
+        </div>
+    
+</center>
