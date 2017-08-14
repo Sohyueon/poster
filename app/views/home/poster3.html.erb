@@ -5,69 +5,49 @@
         border-radius: .3em;
         width: 100%;
     }
-    #container3 { width: 568px; height:781px; border:2px solid #ccc; background-image: url('europe.jpg'); background-color: LightSkyBlue; padding: 20px 20px 20px 20px;}
-    .selectable .ui-selected { background: #F39814; color: white; }
+    #container3 { padding-top: 40px; position: relative; width: 568px; height:781px; border:2px solid #ccc; background-position: center top; background-image: url('../back1.jpg'); background-color: #FFFFFF; background-repeat: no-repeat; }
+    
     .tt {
-        background-color: LightSkyBlue;
-        width: 350px;
-        overflow: visible;
+        position: absolute;
+        width: 400px;
+        /*overflow: visible;*/
         font-family: 'Lobster', cursive;
-        font-size: 9rem;
-        height: 250px; border:0;
-        text-align: center;
-        overflow-y:hidden;
-        background:clear;
+        font-size: 10rem;
+        height: auto;
+        border:0;
+        left:15%;
+        top: 10%;
+        text-align:left;
+        /*overflow-y:hidden;*/
+        background:transparent;
     }
     
-    #big {background-color: LightBlue; font-size: 3rem; font-family: 'Architects Daughter', cursive; text-align: left; position: relative; left: -168px; top: -189px;}
-    #small {background-color: LightBlue; text-align: left; font-family: 'Domine', serif; cursive; position: relative; left: -173px; top: -190px;}
-    #ph_num {text-align:text-align: left; position: relative; left: -173px; top: -167.5px; }
+    #small {background: transparent; text-align: left; font-family: 'Domine', serif; cursive; position: absolute; left: 15%; top: 65%;}
+    
 </style>
   
-  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-  <script>
-  $( function() {
- 
-    $( ".draggable" ).draggable({ containment: "#container", scroll: false });
-    $( "#draggable1" ).draggable({ containment: "#container", scroll: false });
-    $( ".resizable" ).resizable();
-    $(".selectable").selectable();
-  })
-   
-  </script>
 <center id="ji">
-        <div id="container3" class="selectable">
-            <span class="draggable" width="auto" style="text-align:center;">
-                <textarea type="text" class="tt" id="title" onkeydown="resize(this)" onkeyup="resize(this)">CAR WASH</textarea>
-                <br>
-            </span> 
-            
-            <br>
-           
-            
-            <span class="draggable" id="big" width="auto">
-                OUR<br>
-                SERVICES<br><br>
+       <div id="container3">
+           <span style="position: absolute; font-size: 1.5rem; top: 5%; text-align:left; left:15%;">제 4회 청소년을 위한 영화학교 졸업작품 상영회</span>
+            <span class="tt" id="title">
+                Pony<br>Film<br>Festival<br>
             </span>
-            <span class="draggable" id="small" width="auto">
                 
-                BASIC CLEAN - $15<br>
-                Interior Cleaning<br>
-                Basic Wash<br><br>
-                SUPER CLEAN - $20<br>
-                Interior Cleaning<br>
-                Scratch Removal,<br>
-                Carpet Cleaning<br><br>
-                DELUXE CLEAN - $30<br>
-                Interior Cleaning,<br>
-                Scratch Removal,<br>
-                Carpet Cleaning<br>
-                Paint Restoration<br>
-            </span>
-            <span class="draggable" id="ph_num" width="auto">
-               02)000-0000
+            <br>
+            
+            <span id="small">
+                <p style="font-size: 3rem; font-family: 'Allan', cursive; ">Play On Neverending Youth</p>
+                
+                <br><br>
+                일시: 2017년 8월 30일 (수) 오후 2시<br>
+                장소: 한국영화진흥위원회 독립영화시사관<br>
+                주최
+                <img src="../logo1.PNG" style="width:170px; height:40px;">
+                <br>
+                후원
+                <img src="../logo2.PNG" style="width:150px; height:40px;">
+                <img src="../logo3.jpg" style="width:150px; height:40px;">
+                <img src="../logo4.jpg" style="width:200px; height:40px;">
             </span>
         </div>
-    
 </center>

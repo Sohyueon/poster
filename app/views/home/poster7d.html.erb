@@ -1,0 +1,102 @@
+<style>
+<link href="https://fonts.googleapis.com/css?family=Berkshire+Swash|Kaushan+Script" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Sedgwick+Ave+Display" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Cuprum" rel="stylesheet">
+
+    input[type='file'] {
+        border: 1px solid #d1d1d1;
+        padding: .5em;
+        border-radius: .3em;
+        width: 100%;
+    }
+@font-face {
+  font-family: 'LotteMartDream';
+  font-style: normal;
+  font-weight: 400;
+  src: url('//cdn.jsdelivr.net/korean-webfonts/1/corps/lottemart/LotteMartDream/LotteMartDreamMedium.woff2') format('woff2'), url('//cdn.jsdelivr.net/korean-webfonts/1/corps/lottemart/LotteMartDream/LotteMartDreamMedium.woff') format('woff');
+}
+
+
+@font-face {
+  font-family: 'LotteMartDream';
+  font-style: normal;
+  font-weight: 300;
+  src: url('//cdn.jsdelivr.net/korean-webfonts/1/corps/lottemart/LotteMartDream/LotteMartDreamLight.woff2') format('woff2'), url('//cdn.jsdelivr.net/korean-webfonts/1/corps/lottemart/LotteMartDream/LotteMartDreamLight.woff') format('woff');
+}
+
+.lottemartdream * {
+ font-family: 'LotteMartDream', sans-serif;
+ font-weight:300;
+}
+.w400 {
+ font-weight: 400;
+}
+
+
+    #container {position: relative; width: 568px; height:781px; border:2px solid #ccc; background-color: #fef9ff; }
+    #triangle-topleft {position: relative; width: 0; height: 0; border-top: 781px solid #fef9ff; border-right: 568px solid transparent;}
+    #sm-container {position: absolute; top: -730px; width: 350px; height: 350px; background-color: #FFFFFF;  margin-left:100px; margin-right:100px; border:3px solid #7a0414; }
+    
+    .tt {
+        width: 568px;
+        height: 300px;
+        overflow: visible;
+        font-family: 'Lobster', cursive;
+        font-size: 9rem;
+        border:0;
+        text-align: center;
+        overflow-y:hidden;
+        background:clear;
+    }
+    
+    #big {position: absolute; width: 568px; font-size: 3rem; font-family: 'Sedgwick Ave Display', sans-serif; olor: #000000; text-align: center; left: initial; top: -350px;}
+    #small {position: absolute; width: 568px; font-size: 1.5rem; text-align: center; font-family: 'Montserrat', sans-serif; color: #E9967A; left: initial; top: -170px;}
+</style>
+  
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script>
+  $( function() {
+ 
+    $( ".draggable" ).draggable({ containment: "#container2", scroll: false });
+    $( "#draggable1" ).draggable({ containment: "#container2", scroll: false });
+    $( ".resizable" ).resizable();
+    $(".selectable").selectable();
+  })
+   
+  </script>
+<center id="ji">
+        <div id="container">
+            <div id="triangle-topleft">
+                
+                <div id="sm-container">
+                    <img src="http://image.chosun.com/sitedata/image/201610/27/2016102700781_0.jpg" style="width: 345px; height: 345px; text-align: center;">
+                    
+                </div>
+                <span id="big">
+                    <p style="font-size:8rem;">Lee Duhee</p>
+                </span>
+                
+                
+                
+                <br>
+                
+                
+                <span id="small">
+                    <strong>LikeLion - Hack Your Life</strong> <br><br>
+                    
+                    <p style="color: #000000;" class="lottemartdream" id="p2" class="normal w400">
+                        <strong>HelloWorld와 같은 딱딱한 코드가 아닌<br>
+                        자기가 만들어보고 싶은 것을<br>
+                        구체적으로 표현해보는 것으로 시작했습니다.</strong><br>
+                        
+                    </p>
+                    <p style="color: #000000; font-family: 'Armata', sans-serif; font-size: 1.2rem;">
+                        garamail@naver.com
+                    </p>
+                </span>
+            
+            
+        </div>
+    
+</center>

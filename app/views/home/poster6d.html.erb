@@ -1,0 +1,74 @@
+<style>
+<link href="https://fonts.googleapis.com/css?family=Sedgwick+Ave+Display" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Cuprum" rel="stylesheet">
+    input[type='file'] {
+        border: 1px solid #d1d1d1;
+        padding: .5em;
+        border-radius: .3em;
+        width: 100%;
+    }
+    #container {position: relative; width: 568px; height:780px; border:2px solid #ccc; background-color: #494949; }
+    #triangle-topleft {background-image: url(''); position: relative; width: 0; height: 0; border-top: 781px solid #494949; border-right: 568px solid transparent;}
+    #sm-container {position: absolute; top: -675px; width: 568px; height: 595px; background-color: #e0e0e0; padding-top: 10px; padding-bottom: 10px;}
+    
+    /*#top-title{position: absolute; top: -760px; width: 568px; height: 100px;padding-top: 10px; padding-bottom: 10px;}*/
+    .tt {
+        width: 568px;
+        height: 300px;
+        overflow: visible;
+        font-family: 'Lobster', cursive;
+        font-size: 9rem;
+        border:0;
+        text-align: center;
+        overflow-y:hidden;
+        background:clear;
+    }
+    
+    #big {position: absolute; width: 568px; font-size: 6.5rem; font-family: 'Sedgwick Ave Display', sans-serif; color: #000000; text-align: center; left: initial; top: -770px;}
+    #small {position: absolute; width: 568px; font-size: 1.5rem; text-align: center; font-family: 'Montserrat', sans-serif; color: #E9967A; left: initial; top: -70px;}
+
+</style>
+  
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script>
+  $( function() {
+ 
+    $( ".draggable" ).draggable({ containment: "#container2", scroll: false });
+    $( "#draggable1" ).draggable({ containment: "#container2", scroll: false });
+    $( ".resizable" ).resizable();
+    $(".selectable").selectable();
+  })
+   
+  </script>
+<center id="ji">
+        <div id="container">
+            <div id="triangle-topleft">
+                <!--<div id="top-title">-->
+                    <span id="big">
+                    <strong>kolkovna celnice</strong>
+                    </span>
+                <!--</div>-->
+                
+                <div id="sm-container">
+                    <img src="http://scontent.cdninstagram.com/t51.2885-15/s320x320/sh0.08/e35/17438901_1803522659974366_6357657187086499840_n.jpg" style="width: 220px; height: 220px; margin:20px;">
+                    <img src="http://scontent.cdninstagram.com/t51.2885-15/s320x320/sh0.08/e35/17438901_1803522659974366_6357657187086499840_n.jpg" style="width: 220px; height: 220px; margin:20px;">
+                    <p>dddddddddddddㅇ믄에에 귀차나ㅠ널뮤ㅠㅠddd</p>
+                    <img src="http://scontent.cdninstagram.com/t51.2885-15/s320x320/sh0.08/e35/17438901_1803522659974366_6357657187086499840_n.jpg" style="width: 220px; height: 220px; margin:20px;">
+                    <img src="http://scontent.cdninstagram.com/t51.2885-15/s320x320/sh0.08/e35/17438901_1803522659974366_6357657187086499840_n.jpg" style="width: 220px; height: 220px; margin:20px;">
+                </div>
+                
+                
+                <span id="small">
+                    <p style="color: #000000; font-family: 'Cuprum', sans-serif;">
+                        <strong>V Celnici 1031/4, 110 00 Nové Město</strong><br>
+                    </p>
+                    <p style="color: #000000; font-family: 'Cuprum', sans-serif; font-size: 1.5rem;">
+                        02)000-0000>
+                    </p>                    
+                </span>
+            
+            
+            </div>
+        </div>
+</center>

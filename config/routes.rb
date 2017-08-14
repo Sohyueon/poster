@@ -5,6 +5,8 @@ Rails.application.routes.draw do
   get 'home/poster3'
   get 'home/poster4'
   get 'home/poster5'
+  get 'home/poster6d'
+  get 'home/poster7d'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
